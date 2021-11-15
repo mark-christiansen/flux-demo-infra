@@ -10,6 +10,6 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: flux-demo-ccloud-operator
+    name: ccloud-operator
   targetNamespace: default
 
