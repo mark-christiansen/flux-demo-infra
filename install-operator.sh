@@ -3,6 +3,7 @@
 NAME=flux-demo-ccloud-operator
 REPO=https://github.com/mark-christiansen/$NAME
 POD=ccloud-operator
+NS=default
 
 flux create source git $POD --url=$REPO --branch=main --interval=30s \
   --export > ./clusters/my-cluster/$NAME-source.yaml
