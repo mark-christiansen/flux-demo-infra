@@ -12,4 +12,4 @@ flux create kustomization $POD --target-namespace=$NS --source=$POD \
   --path="./kustomize" --prune=true --interval=5m \
   --export > ../clusters/my-cluster/$NAME-kustomization.yaml
 
-git add . && git commit -m "bootstrap $NAME" && git push
+git add ../ && git commit -m "bootstrap $NAME" && git push
