@@ -18,3 +18,13 @@ echo "% kubectl get kustomizations"
 echo ""
 kubectl get kustomizations
 echo ""
+
+echo "% kubectl get secret"
+echo ""
+kubectl get secret
+echo ""
+
+echo "% kubectl get deployment"
+echo ""
+kubectl get deployment
+echo ""
