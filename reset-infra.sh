@@ -14,7 +14,7 @@ for DEPLOY in ${DEPLOYS[@]}; do
   kubectl -n $NS delete deployment $DEPLOY
 done
 
-CONFIGS=("" "")
+CONFIGS=("cc.env.default" "cc.env.default.kafka.devops-demo")
 echo "removing configmaps"
 for CONFIG in ${CONFIGS[@]}; do
   kubectl -n $NS delete configmap $CONFIG
