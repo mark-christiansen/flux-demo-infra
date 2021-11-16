@@ -16,8 +16,6 @@ TOPICS=("source-topic-0" "source-topic-1" "source-topic-2")
 # clear acls and topics
 for TOPIC in ${TOPICS[@]}; do
   echo "deleting topic $STOPIC"
-  ccloud kafka acl delete --topic $TOPIC --operation CREATE --allow --service-account $ACCOUNT_ID
-  ccloud kafka acl delete --topic $TOPIC --operation READ --allow --service-account $ACCOUNT_ID
   ccloud kafka acl delete --topic $TOPIC --operation WRITE --allow --service-account $ACCOUNT_ID
   ccloud kafka topic delete $TOPIC
 done

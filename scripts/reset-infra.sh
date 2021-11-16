@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd ../
 echo "deleting source and kustomizations from flux-demo-infra"
 rm clusters/my-cluster/*.yaml
 
@@ -27,3 +28,4 @@ for SECRET in ${SECRETS[@]}; do
 done
 
 echo "finished reseting infra"
+cd scripts
